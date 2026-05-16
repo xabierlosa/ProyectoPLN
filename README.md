@@ -32,3 +32,9 @@ python -m src.cli_chat --index artifacts/index.faiss --docs artifacts/docs.jsonl
 - En Colab puedes instalar faiss-gpu en lugar de faiss-cpu.
 - Si quieres mas calidad, cambia el modelo a Qwen/Qwen2.5-14B-Instruct.
 - Para embeddings, se recomienda intfloat/multilingual-e5-base.
+
+## Analisis de sesgos
+
+El proyecto incorpora el cuaderno [notebooks/sesgos.ipynb](notebooks/sesgos.ipynb) para revisar sesgos relevantes en un corpus de recetas web: concentracion por autor o fuente, sesgo tematico, sesgo geografico y sesgo de accesibilidad.
+
+Las mitigaciones documentadas incluyen diversificar las fuentes de scraping, limitar la repeticion por dominio, anotar metadatos de procedencia, evaluar por subgrupos y penalizar la redundancia en el retrieval.
