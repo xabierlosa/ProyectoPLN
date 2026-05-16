@@ -2,7 +2,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-DATA_FILE = ROOT / "ChefGPT_Dataset_Random_Sample.json"
+DATA_FILE = ROOT / "data" / "sesgos" / "ChefGPT_Dataset_downsampled_top10pct_authors.json"
 ARTIFACTS_DIR = ROOT / "artifacts"
 INDEX_PATH = ARTIFACTS_DIR / "index.faiss"
 DOCS_PATH = ARTIFACTS_DIR / "docs.jsonl"
